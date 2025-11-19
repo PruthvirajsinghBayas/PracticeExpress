@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Natural Ice Creams</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Montserrat', Arial, sans-serif;
+    }
+.head1{
+   height:45px;
+   width: 100%; 
+   background-color: rgb(0, 172, 78);
+   color: white;
+   font-size: 16px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.sec1{
+    height: 70px;
+    width: 100%;
+    margin-bottom:20px;
+}
+.nav1{
+    height: 70px;
+    width: 100%;
+    display: flex;
+}
+.images1{
+    display: flex;
+    height: 60px;
+    width: 100px;
+    padding-left: 10px;
+}
+.btn1{
+    height: 35px;
+    width: 120px;
+    background-color:rgb(0, 172, 78);
+    color: white;
+    border-style: none;
+    border-radius: 5px 5px;
+    margin-top: 45px;
+}
+.searchbar{
+    align-self: self-end;
+    justify-content: flex-end;
+    margin-left: 160%;
+    margin-top: 40px;
+    height: 50px;
+    width: 450px;
+    border-style: none;
+    background-color:rgb(230, 231, 233);
+}
+.searchicon{
+    height: 50px;
+    width: 50px;
+    margin-left: 47%;
+    margin-top: 40px;
+    border-style: none;
+    background-color:rgb(0, 172, 78) ;
+    color: white;
+    padding-top: 13px;
+    padding-left: 15px;
+    font-size: 20px;
+    border-radius: 3px 3px;
+}
+.nav2{
+height: 50px;
+width: 100%;
+background-color: rgb(57, 57, 63);
+}
+.navlist{
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    justify-content: space-around;
+    padding-left: 95px;
+    padding-right:95px;
+    padding-top: 15px;
+}
+.navitems :link{
+color: white;
+text-decoration: none;
+}
+.navitems:hover{
+color: rgb(0, 172, 78);
+text-decoration: none;
+}
+.navitems :active{
+color: white;
+text-decoration: none;
+}
+.navitems :visited{
+color: white;
+text-decoration: none;
+}
+.section2{
+     justify-content: center;
+     text-align: center;
+     height: 229px;
+     width: 795px;
+     margin-left: 300px;
+}
+.btn2{
+    height: 35px;
+    width: 120px;
+    background-color:rgb(0, 172, 78);
+    color: white;
+    border-style: none;
+    border-radius: 5px 5px;
+}
+.section3{
+    height: 254px;
+    width: 100%;
+    background-color: rgb(19, 165, 56);
+}
+.btn3{
+    height: 56px;
+    width: 172px;
+    margin-left: 610px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: larger;
+    background-color:black;
+    color: white;
+    border-style: none;
+    border-radius: 5px 5px;
+}
+.footer{
+    height: 418px;
+    width: 100%;
+    display: flex;
+    background-color: rgb(133, 133, 133);
+    color: white;
+}
+.f1{
+    height: 329px;
+    width: 23%;
+    font-size: x-large;
+    border-right: 20px;
+    border-right-width: 1px solid white;
+}
+.footer {
+  background: rgb(54, 53, 57);
+  color: white;
+  padding: 48px 0 28px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 1100px;
+  margin: 0 auto;
+  border-bottom: 1px solid #666;
+  
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 38px;
+  min-width: 200px;
+}
+
+.footer-section h4 {
+  color: rgb(167, 167, 171);
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.footer-section p, 
+.footer-section a {
+  color: white;
+  margin: 0 0 9px 0;
+  font-size: 15px;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: rgb(19, 165, 56);
+  text-decoration: none;
+}
+
+.icon {
+  margin-right: 9px;
+  font-size: 15px;
+  vertical-align: middle;
+}
+
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .footer-section {
+    margin: 0 0 32px 0;
+    min-width: 0;
+  }
+}
+  .footer-social {
+    background: rgb(54, 53, 57);
+    color: white;
+    font-size: xx-large;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 48px 0 28px 0;
+  }
+.footer-social:link i {
+color: white;
+text-decoration: none;
+}
+.footer-social:hover i {
+color: white;
+text-decoration: none;
+}
+.footer-social :active i {
+color: white;
+text-decoration: none;
+}
+.footer-social:visited i {
+color: white;
+text-decoration: none;
+}
+
+</style>
+<body>
+    <div class="head1"><p>*This is only a brand name and does not represent its true nature.</p></div>
+    <div class="sec1">
+        <div class="nav1">
+         <div class="images1">
+            <img src="./logo.jpg" style="height: 60px;width: 250px;margin-left:100px;padding-right: 20px;margin-top: 30px;">
+            <a class="button1" href="#"><button class="btn1">Order Now</button></a>
+         </div>
+         <div class="nav1">
+         <div> <input class="searchbar" placeholder="   I'm looking for..."  type="text"></div>
+         <div class="searchicon"><i class="fa-solid fa-magnifying-glass"></i></div>
+         </div>
+        </div>
+    </div>
+    <br>
+    <div class="nav2">
+        <div class="navlist">
+            <li class="navitems"><a href="#">Ingredient story</a></li>
+            <li class="navitems"><a href="#products">Products</a></li>
+            <li class="navitems"><a href="#">Our Legacy</a></li>
+            <li class="navitems"><a href="#">Malai Magic</a></li>
+           <li class="navitems"><a href="#">Franchise Queries</a></li>
+           <li class="navitems"><a href="#">Store Locator</a></li>
+           <li class="navitems"><a href="#">Blogs</a></li>
+        </div>
+    </div>
+    <div><img src="./icecream image.png" style="height: 440px;width: 100%;"></div>
+</body>
+<br>
+<br>
+<div style="text-align: center;"><h1>40 years of scooping up love - Story of Naturals Ice Cream</h1></div>
+<br>
+<iframe width="1140" height="488" style="margin-left: 200px;" src="https://www.youtube.com/embed/NBeNtpyRSm8?si=tADV8sunbewJgvZT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br>
+<br>
+<br>
+<img id="products" src= "./flavours.png" style="height: 570px;width: 100%;">
+<br>
+<br>
+<br>
+<br>
+<div class="section2">
+    <h2>From Humble Beginnings to Ice Cream Excellence: The Story of Naturals Ice Cream</h2>
+    <br>
+    <p>In the sizzling streets of 1984 Mumbai, amid the tantalizing scent of Pav Bhaji and scorching sun, a young visionary named Mr. Raghunandan Srinivas Kamath embarked on a daring journey. Little did he know that his simple idea would transform into an exhilarating Indian sensation – Naturals Ice Cream, making him the pioneer of handcrafted icecream from quintessential fruit-based flavors such as Sitaphal, Tender Coconut, Jackfruit, Muskmelon and Kala Jamun, amongst many more.</p>
+    <br>
+      <a class="button2" href="#"><button class="btn2">Read More</button></a>
+</div>
+<br>
+<br>
+<div class="section3">
+ <a class="button3" href="#"><button class="btn3">Order Now</button></a>
+ <br>
+ <a style="height: 56px; width: 172px; margin-left: 610px; margin-top: 30px; margin-bottom: 40px; color: white;font-size: x-large;" href="#">Also available on</a>
+    <br>
+     <a href="https://www.swiggy.com/restaurants"><img style="margin-left: 27%;margin-top: 20px;" src="./swiggy.png"></a>
+     <a href="https://www.zomato.com/india"><img src="./zomato.png"></a>
+</div>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section contact-us">
+      <h4>CONTACT US</h4>
+      <p>
+        Plot 55 ABCD & 56 D, Kandivali Industrial Estate, Charkop, Kandivali (W),<br>
+        Mumbai – 400 067.
+      </p>
+      <p>
+        <span class="icon">&#9993;</span>
+        customercare@naturalicecreams.in
+      </p>
+      <p>
+        <span class="icon">&#128222;</span>
+        8080801984
+      </p>
+    </div>
+    <div class="footer-section">
+      <h4>ABOUT NATURALS</h4>
+      <p><a href="#">Ingredient Story</a></p>
+      <p><a href="#">Our Legacy</a></p>
+      <p><a href="#">Franchise Queries</a></p>
+      <h4>FRANCHISE QUERIES</h4>
+      <p><a href="#">Become a Business Partner</a></p>
+      <p><a href="#">Franchise FAQ</a></p>
+    </div>
+    <div class="footer-section">
+      <h4>OTHERS</h4>
+      <p><a href="#">Artist Collaboration</a></p>
+      <p><a href="#">Store locator</a></p>
+      <p><a href="#">CSR</a></p>
+      <p><a href="#">Legal</a></p>
+      <p><a href="#">Nutritional Info</a></p>
+      <p><a href="#">Careers</a></p>
+      <p><a href="#">Blogs</a></p>
+    </div>
+    <div class="footer-section">
+      <h4>SHOP</h4>
+      <p><a href="#">Round The Year</a></p>
+      <p><a href="#">Festive Special</a></p>
+      <p><a href="#">Seasonal</a></p>
+      <p><a href="#">Friday Funday</a></p>
+      <p><a href="#">No Added Sugar</a></p>
+      <p><a href="#">Berry Festival</a></p>
+    </div>
+  </div>
+</footer>
+<div class="footer-social">
+    <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+  </div>
+</html>

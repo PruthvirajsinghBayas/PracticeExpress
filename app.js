@@ -6,11 +6,17 @@ const app = express()
 
 const port =   process.env.PORT  || 7000
 
-app.get('/',(req,res)=>{
-    res.send('Hello from express..')
-})
+app.use(express.urlencoded({extends:true}))
+app.use(express.json())
+
+app.use('/',express.static('public'))
+
+// app.get('/',(req,res)=>{
+//     res.send('Hello from express..')
+// })
 
 app.get('/contactus', (req,res)=>{
+    console.log(req.body,"****req.body****")
     res.send("<h1>This is Contact us page</h1>")
 })
 
